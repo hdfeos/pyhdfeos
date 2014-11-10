@@ -1,0 +1,30 @@
+language: python
+python:
+  - "2.7"
+  - "3.3"
+  - "3.4"
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq libhdf4-dev
+  - sudo apt-get install -qq libhe5-hdfeos0 
+  - sudo apt-get install -qq libhe5-hdfeos-dev 
+  - sudo apt-get install -qq libhdfeos0 
+  - sudo apt-get install -qq libhdfeos-dev 
+  - sudo apt-get install -qq python-cffi 
+  - sudo apt-get install -qq python-all-dev 
+  - sudo apt-get install -qq libgctp-dev 
+  - sudo apt-get install -qq libhdf5-dev
+
+# command to install dependencies
+install:
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then pip install numpy mock ; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '3.3' ]]; then pip install numpy ; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '3.4' ]]; then pip install numpy ; fi
+
+# command to run tests
+script:
+  - python -m unittest discover
+
+notifications:
+  email: "john.g.evans.ne@gmail.com"
