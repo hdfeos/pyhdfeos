@@ -13,6 +13,7 @@ before_install:
   - sudo apt-get install -qq libhdfeos-dev 
   - sudo apt-get install -qq python-all-dev 
   - sudo apt-get install -qq libgctp-dev 
+  - sudo apt-get install -qq libhdf5-serial-dev
 
 # command to install dependencies
 install:
