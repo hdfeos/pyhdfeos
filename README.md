@@ -23,8 +23,8 @@ Mac
 
 MacPorts
 --------
-MacPorts uses version HDF-EOS5 version 1.15, so it is vulnerable to the issue previously
-described.
+MacPorts uses version HDF-EOS5 version 1.15, so it is vulnerable to the
+issue previously described.
 
 -----
 Linux
@@ -32,7 +32,8 @@ Linux
 
 Linux Mint (other Ubuntu variants as well)
 ---------------------------------------------
-Linux Mint 17 uses HDF-EOS5 version 1.14, so it works out of the box.  Prerequisites include
+Linux Mint 17 uses HDF-EOS5 version 1.14, so it works out of the box.
+Prerequisites include
 
 * python-all-dev
 * python-cffi
